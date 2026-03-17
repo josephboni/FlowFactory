@@ -1,0 +1,49 @@
+<!-- Declaración del tipo de documento HTML5 -->
+<!DOCTYPE html>
+ 
+<!-- Etiqueta raíz del documento HTML -->
+<html lang="es">
+              <div class="topnav">
+  <a href="index.html">inicio</a>
+  <a class="active" href="contactanos.html">Contacaton</a>
+  <a href="planes.html">planes</a>
+  <a href="artistas.html">Artistas</a>
+</div>
+<head>
+    <!-- Metadatos del documento -->
+    <meta charset="UTF-8"> <!-- Codificación de caracteres en español -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Adaptar a móviles -->
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Datos</title> <!-- Título que aparece en la pestaña del navegador -->
+</head>
+
+<body>
+    <div class="contenedor">
+        <center>
+    <h1>Contactanos</h1> 
+    <br>
+<!--Formulario para dar datos a FlowFactory-->
+  <form action="#" method="post">
+  <label for="nombre">Nombre:</label><br>
+  <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required><br><br>
+
+  <label for="correo">Correo:</label><br>
+  <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" required><br><br>
+
+  <label for="mensaje">Mensaje:</label><br>
+  <textarea id="mensaje" name="mensaje" rows="4" placeholder="Cuéntanos más sobre tu música o dudas" required></textarea><br><br>
+
+  <button type="submit" class="btn-enviar">Enviar</button>
+  
+  </form>
+
+   </center>
+
+        <hr>
+     <!-- Pie de página -->
+    <footer>
+        <p>©   Joseph Steeven Bonilla Ramirez</p>
+    </footer>
+    </div>
+</body>
+</html>
