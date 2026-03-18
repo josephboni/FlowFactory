@@ -1,43 +1,51 @@
-.topnav {
-  background-color:  #2c3e50;
+header {
+  background-color:  #1F1F1F;
   overflow: hidden;
 }
 
-/* Style the links inside the navigation bar */
-.topnav a {
+/* stilo de links de navegacion */
+header a {
   float: left;
   color: #f2f2f2;
   text-align: center;
-  padding: 12px 12px;
+  padding: 13px 13px;
   text-decoration: none;
   font-size: 17px;
+  border-radius: 10px;
 }
 
-/* Change the color of links on hover */
-.topnav a:hover {
+/* cambio de color con cursor */
+header a:hover {
   background-color: #ffffff;
   color: black;
+  border-radius: 10px;
 }
 
-/* Add a color to the active/current link */
-.topnav a.active {
-  background-color: rgb(116, 181, 201);
+/* link activo */
+header a.active {
+  background-color: #8A2BE2;
   color: white;
+  border-radius: 10px;
 }
 
 body {
-    background: #b5c1cb;
+    background: #0A0A0A;
+    
 }
+p{
+    color: #F2F2F2;
+    
+} 
 
 
 
 
 header{
-    background-color: #2c3e50;
+    background-color: #1F1F1F;
     color: white;
     text-align: center;
-    padding: 20px;
-    border-radius: 0px;
+    padding: 10px;
+    border-radius: 10px;
 }
 
 
@@ -72,6 +80,7 @@ div.galleria-item img {
 div.galleria-item div.texto {
   padding: 15px;
   text-align: center;
+  color: #F2F2F2;
 }
 
 
@@ -79,11 +88,12 @@ div.galleria-item div.texto {
 
 /* Pie de página */
 footer {
-    background-color: #2c3e50;
+    background-color: #1F1F1F;
     color: white;
     text-align: center;
     padding: 10px;
     position: relative;
     bottom: 0;
-   
+    border-radius: 10px;
+    
 }
