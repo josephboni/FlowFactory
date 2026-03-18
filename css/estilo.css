@@ -198,6 +198,37 @@ h3, h5 {
 }
 
 
+
+/* Galería de artistas */
+
+div.galleria {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+div.galleria-item {
+  margin: 5px;
+  border: 1px solid #fcfcfc65;
+  width: 180px;
+}
+
+div.galleria-item:hover {
+  border: 1px solid #2c3e50;
+}
+
+div.galleria-item img {
+  width: 100%;
+  height: auto;
+}
+
+div.galleria-item div.texto {
+  padding: 15px;
+  text-align: center;
+  color: #F2F2F2;
+}
+
+
 /* Pie de página */
 footer {
     background-color: #1F1F1F;
