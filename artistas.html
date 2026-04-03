@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<!-- Etiqueta raíz del documento HTML -->
+<html lang="es">
+
+<head>
+    <!-- Metadatos del documento -->
+    <meta charset="UTF-8"> <!-- Codificación de caracteres en español -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Adaptar a móviles -->
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Artistas</title> <!-- Título que aparece en la pestaña del navegador -->
+</head>
+
+<body>
+<div class="nav"> 
+    <button type="button" class="btn-interfaz" onclick="window.location.href='index.html'">
+        Inicio
+    </button>
+    <button type="button" class="btn-interfaz" onclick="window.location.href='contactanos.html'">
+        Contactanos
+    </button>
+    <button type="button" class="btn-interfaz" onclick="window.location.href='planes.html'">
+        Planes
+    </button>
+    <button type="button" class="btn-interfaz-active" onclick="window.location.href='artistas.html'">
+        Artistas
+    </button>
+    <div class="register">
+    <button type="button" class="btn-register" onclick="window.location.href='iniciarsecion.html'">
+        iniciar secion
+    </button>
+    <button type="button" class="btn-register" onclick="window.location.href='crearcuenta.html'">
+        crear cuenta
+    </button>
+    <span id="bienvenida"></span>
+    <button onclick="cerrarSesion()" class="btn-register">Cerrar sesión</button>
+    </div>
+</div>
+<header>
+    <h1>FlowFactory</h1>
+    <!-- Párrafo de texto -->
+    <p>
+    En FlowFactory podrás sacar toda tu inspiración con la música. Somos una disquera enfocada en descubrir, impulsar y 
+    desarrollar nuevos talentos. Te ayudaremos a mejorar tus ideas,
+    perfeccionar tu estilo y convertir tus pensamientos en canciones que conecten con el mundo.
+    </p>
+</header>
+    <center>
+  <h2>
+    ¿quieres ser parte de esta familia musical?
+  </h2>
+  <p>
+    Si eres un artista emergente con talento y pasión por la música, ¡te invitamos a unirte a nuestra familia musical en FlowFactory! 
+    Estamos comprometidos en descubrir y apoyar nuevos talentos, brindándote las herramientas y el apoyo necesario para llevar tu música al siguiente nivel. 
+    Únete a nosotros y forma parte de una comunidad creativa donde tu talento será valorado y tu música podrá llegar a audiencias de todo el mundo.
+  </p>
+  <div class="contactanos">
+            <button type="button" class="btn-contactanos" onclick="window.location.href='contactanos.html'">
+            contactanos
+            </button>
+            </div>
+    </center>
+<br>
+
+<div class="galleria">
+
+      <div class="galleria-item">
+        <a target="_blank" href="artistas/Paulo.jpeg">
+          <img src="artistas/Paulo.jpeg" alt="Paulo Londra">
+        </a>
+        <div class="texto">
+          <a href="https://open.spotify.com/intl-es/artist/3vQ0GE3mI0dAaxIMYe5g7z" class="spotify">
+            Paulo Londra
+          </a>
+        </div>
+      </div>
+
+
+
+
+        <div class="galleria-item">
+          <a target="_blank" href="artistas/billie.jpeg">
+            <img src="artistas/billie.jpeg" alt="Billie Eilish" width="150" height="200">
+          </a>
+          <div class="texto">
+          <a class="spotify" href="https://open.spotify.com/intl-es/artist/6qqNVTkY8uBg9cP3Jd7DAH" class="botton">Billie Eilish</a>
+          </div> 
+        </div>
+
+        <div class="galleria-item">
+          <a target="_blank" href="artistas/Milo J.webp">
+            <img src="artistas/MILO J.webp" alt="MILO J" width="150" height="200">
+          </a>
+          <div class="texto">
+          <a class="spotify" href="https://open.spotify.com/intl-es/artist/19HM5j0ULGSmEoRcrSe5x3" class="botton">Milo J</a>
+          </div>
+        </div>
+
+
+        <div class="galleria-item">
+          <a target="_blank" href="artistas/niki.webp">
+            <img src="artistas/niki.webp" alt="Niki" width="150" height="200">
+          </a>
+          <div class="texto">
+            <a class="spotify" href="https://open.spotify.com/intl-es/artist/2UZIAOlrnyZmyzt1nuXr9y" class="botton">Nicki Nicole</a>
+          </div>
+        </div>
+
+
+        <div class="galleria-item">
+          <a target="_blank" href="artistas/tureno.jpeg">
+            <img src="artistas/tureno.jpeg" alt="Trueno" width="150" height="200">
+          </a>
+          <div class="texto">
+            <a class="spotify" href="https://open.spotify.com/intl-es/artist/2x7PC78TmgqpEIjaGAZ0Oz" class="botton">Trueno</a>
+          </div>
+        </div>
+
+        <div class="galleria-item">
+          <a target="_blank" href="artistas/babi.jpg">
+            <img src="artistas/babi.jpg" alt="Babi" width="200" height="400">
+          </a>
+          <div class="texto">
+            <a class="spotify" href="https://open.spotify.com/intl-es/artist/5nP79s99csrvcOiXTGjVfg" class="botton">Babi</a>
+          </div>
+        </div>
+
+
+</div>
+
+<script src="js/session.js"></script>
+
+<br><br> <br><br>
+<!-- Pie de página -->
+  <footer>
+    <p>©2026   Joseph Steeven Bonilla Ramirez</p>
+  </footer>
+
+</body>
+</html>

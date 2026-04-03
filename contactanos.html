@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <!-- Etiqueta raíz del documento HTML -->
+<html lang="es">
+
+<head>
+    <!-- Metadatos del documento -->
+    <meta charset="UTF-8"> <!-- Codificación de caracteres en español -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Adaptar a móviles -->
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Contactanos</title> <!-- Título que aparece en la pestaña del navegador -->
+</head>
+
+<body>
+<div class="nav"> 
+    <button type="button" class="btn-interfaz" onclick="window.location.href='index.html'">
+        Inicio
+    </button>
+    <button type="button" class="btn-interfaz-active" onclick="window.location.href='contactanos.html'">
+        Contactanos
+    </button>
+    <button type="button" class="btn-interfaz" onclick="window.location.href='planes.html'">
+        Planes
+    </button>
+    <button type="button" class="btn-interfaz" onclick="window.location.href='artistas.html'">
+        Artistas
+    </button>
+    <div class="register">
+    <button type="button" class="btn-register" onclick="window.location.href='iniciarsecion.html'">
+        iniciar secion
+    </button>
+    <button type="button" class="btn-register" onclick="window.location.href='crearcuenta.html'">
+        crear cuenta
+    </button>
+    <span id="bienvenida"></span>
+    <button onclick="cerrarSesion()" class="btn-register">Cerrar sesión</button>
+    </div>
+</div>
+<header>
+    <h1>FlowFactory</h1>
+    <!-- Párrafo de texto -->
+    <p>
+    En FlowFactory podrás sacar toda tu inspiración con la música. Somos una disquera enfocada en descubrir, impulsar y 
+    desarrollar nuevos talentos. Te ayudaremos a mejorar tus ideas,
+    perfeccionar tu estilo y convertir tus pensamientos en canciones que conecten con el mundo.
+    </p>
+</header>
+    <h2>Contactanos</h2>
+    <!-- Párrafo de texto -->
+    <p>
+    si quieres mas informacion sobre nosotros o quieres formar parte de nuestra disquera no dudes en llenar este formulario de contacto, estamos para ayudarte a cumplir tus sueños musicales.
+    Trabajamos contigo en cada paso del proceso creativo, desde la composición hasta la producción final.
+    </p>
+
+<!--Formulario para dar datos a FlowFactory-->
+    <div class="animacionform">
+    <form action="#" method="post">
+    <label for="nombre">Nombre:</label><br>
+    <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required><br><br>
+
+    <label for="correo">Correo:</label><br>
+    <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" required><br><br>
+
+    <label for="mensaje">Mensaje:</label><br>
+    <textarea id="mensaje" name="mensaje" rows="4" placeholder="Cuéntanos más sobre tu música o dudas" required></textarea><br><br>
+
+    <button type="submit" class="btn-enviar">Enviar</button>
+
+    </form>
+    </div>
+
+
+
+
+
+
+
+
+
+
+<script src="js/session.js"></script>
+<hr>
+<!-- Pie de página -->
+    <footer>
+        <p>©2026   Joseph Steeven Bonilla Ramirez</p>
+    </footer>
+
+    </body>
+    </html>

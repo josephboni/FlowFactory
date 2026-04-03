@@ -1,0 +1,482 @@
+/** Diseño general */
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.930), rgba(0, 0, 0, 0.930)), url('../fondos/fondo1.png');
+    margin: auto;
+}
+
+
+
+/** barra de navegacion */
+.nav {
+    background-color: #131116;
+    margin-top: 0%;
+    
+
+}
+
+/**boton activado */
+.btn-interfaz-active{
+    background-color: #171717;
+    color: white;
+    margin: 8px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+
+}
+
+/** botones inactivos */
+.btn-interfaz{
+    background-color: #8A2BE2;
+    color: white;
+    margin: 8px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    
+}
+.btn-interfaz:hover{
+    background-color: #3a2954;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;  
+}
+
+button.btn-register {
+    background-color: #8A2BE2;
+    color: white;
+    margin: 8px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+button.btn-register:hover {
+    background-color: #3a2954;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+button.btn-register-active {
+    background-color: #171717;
+    color: white;
+    margin: 8px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+/*boton cerrar sesion*/
+button[onclick="cerrarSesion()"] {
+    background-color: #8A2BE2;
+    color: white;
+    margin: 8px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.register {
+    display: flex;
+    float: right;
+}
+#bienvenida {
+    color: white;
+    margin: 8px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button[onclick="cerrarSesion()"]:hover {
+    background-color: rgb(255, 0, 0);
+    color: white;
+}
+
+
+/** titulos de encabezado */
+
+header {
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../fondos/fondo1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height:100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+/*! titulos y subtitulos */
+
+h1 {
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    animation: neon 5s ease-in-out infinite;
+}
+
+@keyframes neon {
+    0%, 100% {
+        
+        text-shadow:
+            0 0 10px #00d4ff,
+            0 0 20px #00d4ff,
+            0 0 40px #00d4ff,
+            0 0 80px #00d4ff;
+    }
+    50% {
+        text-shadow:
+            0 0 5px #00d4ff,
+            0 0 10px #00d4ff;
+    }
+}
+
+
+h2{
+    font-size: 30px;
+    color: #F2F2F2;
+    text-align:center;
+    animation: luz 5s ease-in-out infinite;
+}
+@keyframes luz {
+    0%, 100% {
+        text-shadow:
+            0 0 5px #8A2BE2,
+            0 0 10px #8A2BE2,
+            0 0 20px #8A2BE2;
+    }
+    50% {
+        text-shadow:
+            0 0 3px #8A2BE2,
+            0 0 6px #8A2BE2;
+    }
+}
+h3, h5 {
+    color: #FFD700;
+    font-size: 20px;
+    margin-top: 20px;
+    font-family: Bahnschrift SemiBold;
+}
+/*? textos */
+p{
+    font-size: 17px;
+    color: #F2F2F2;
+    text-align:center;
+    
+} 
+
+/*!imagenes del inicio*/
+div.fotos {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+  
+}
+/*? index */
+div.fotos-item {
+    justify-content: center;
+    margin: 5px;
+    width: 300px;
+}
+
+div.fotos-item img {
+    justify-content: center;
+    width: 80%;
+    height: auto;
+    transition: 1s;
+}
+div.fotos-item:hover img {
+    justify-content: center;
+    width: 90%;
+    height: auto;
+    filter: grayscale(0%) drop-shadow(0 0 10px #8A2BE2);
+}
+
+
+ /** listas */
+.generos{
+display: flex;
+align-items: center;
+justify-content: center; 
+gap: 60px;
+margin-top: 30px;
+}
+
+
+
+
+.generos ul{
+font-size:16px;
+line-height:1.8;
+max-width:300px;
+color: #F2F2F2;
+}
+.generos img{
+align-items: center;
+width: 200px;
+border-radius:12px;
+box-shadow:0 8px 20px rgba(0,0,0,0.25);
+
+}
+
+
+
+
+.titulo-ofrecemos{
+text-align:center;
+font-size:32px;
+margin-bottom:30px;
+}
+
+.ofrecemos{
+display: flex;
+align-items: center;
+justify-content: center; 
+gap: 60px;
+margin-top: 30px;
+}
+.ofrecemos ul{
+font-size:16px;
+line-height:1.8;
+max-width:300px;
+color: #F2F2F2;
+}
+
+.ofrecemos img{
+align-items: center;
+width: 200px;
+border-radius:12px;
+box-shadow:0 8px 20px rgba(0,0,0,0.25);
+
+}
+
+
+/* boton contactar */
+.btn-contactanos {
+    padding: 14px 40px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    background: linear-gradient(270deg, #160f21, #e040fb, #22132d, #6838b5);
+    background-size: 300% 300%;
+    animation: degradado 4s ease infinite;
+    box-shadow: 0 4px 20px rgba(123, 47, 247, 0.5);
+    transition: transform 0.2s, box-shadow 0.2s;
+    letter-spacing: 1px;
+    
+}
+.btn-contactanos:hover {
+    transform: scale(1.07);
+    box-shadow: 0 6px 28px rgba(123, 47, 247, 0.8);
+}
+
+
+/*! Formularios */
+
+form {
+    background-color: #0e0e0eaf;       /* fondo casi negro */
+    color: #F2F2F2;                  /* color de texto general */
+    padding: 40px;                   /* espacio interno */
+    border-radius: 20px;             /* bordes redondeados */
+    box-shadow: 0 0 20px rgba(123, 47, 247, 0.3),
+                0 0 40px rgba(123, 47, 247, 0.1); /* sombra morada exterior */
+    max-width: 300px;                /* ancho máximo del formulario */
+    margin: 40px auto;               /* centrado horizontal con espacio arriba/abajo */
+    border: 1px solid rgba(123, 47, 247, 0.3); /* borde morado semitransparente */
+}
+
+/* ── Etiquetas (label) ── */
+label {
+    display: block;                  /* ocupa toda la línea */
+    margin-bottom: 6px;              /* espacio entre el label y el input */
+    font-size: 0.9rem;               /* tamaño pequeño */
+    color: #aaa;                     /* color gris claro */
+    letter-spacing: 1px;             /* separación entre letras */
+}
+
+/* ── INPUTS Y TEXTAREA ── */
+input, textarea {
+    width: 100%;                     /* ocupa todo el ancho del formulario */
+    padding: 12px 16px;              /* espacio interno del campo */
+    margin-bottom: 18px;             /* espacio entre campos */
+    background-color: #1a1a1a;       /* fondo oscuro del campo */
+    border: 1px solid rgba(123, 47, 247, 0.4); /* borde morado suave */
+    border-radius: 10px;             /* bordes redondeados */
+    color: #F2F2F2;                  /* color del texto escrito */
+    font-size: 0.95rem;              /* tamaño del texto */
+    font-family: 'Segoe UI', sans-serif; /* fuente */
+    outline: none;                   /* quita el borde azul por defecto del navegador */
+    transition: border 0.3s, box-shadow 0.3s; /* animación suave al enfocar */
+    box-sizing: border-box;          /* el padding no aumenta el ancho total */
+}
+
+/* ── EFECTO AL HACER CLIC EN UN CAMPO ── */
+input:focus, textarea:focus {
+    border-color: #cc00ff;           /* borde morado brillante al enfocar */
+    box-shadow: 0 0 10px rgba(204, 0, 255, 0.5); /* resplandor neón al enfocar */
+}
+
+/* ── TEXTAREA (área de texto grande) ── */
+textarea {
+    resize: vertical;                /* solo se puede redimensionar verticalmente */
+    min-height: 120px;               /* altura mínima */
+}
+
+/* ── BOTÓN DE ENVIAR ── */
+button[type="submit"] {
+    width: 100%;                     /* ocupa todo el ancho */
+    padding: 14px;                   /* espacio interno */
+    background: linear-gradient(270deg, #7b2ff7, #cc00ff, #3d5afe, #7b2ff7); /* degradado morado */
+    background-size: 300% 300%;      /* necesario para que el degradado se mueva */
+    animation: degradado 4s ease infinite; /* animación del degradado en loop */
+    color: #fff;                     /* texto blanco */
+    border: none;                    /* sin borde */
+    border-radius: 30px;             /* bordes muy redondeados (forma píldora) */
+    font-size: 1rem;                 /* tamaño del texto */
+    font-weight: bold;               /* texto en negrita */
+    letter-spacing: 2px;             /* separación entre letras */
+    cursor: pointer;                 /* cursor de mano al pasar el mouse */
+    text-transform: uppercase;       /* texto en mayúsculas */
+    transition: transform 0.2s, box-shadow 0.2s; /* animación suave al hover */
+    box-shadow: 0 4px 20px rgba(123, 47, 247, 0.5); /* sombra morada debajo */
+}
+
+/* ── EFECTO AL PASAR EL MOUSE SOBRE EL BOTÓN ── */
+button[type="submit"]:hover {
+    transform: scale(1.03);          /* se agranda un poco */
+    box-shadow: 0 6px 28px rgba(204, 0, 255, 0.7); /* sombra más intensa */
+}
+
+/* ── ANIMACIÓN DEL DEGRADADO ── */
+@keyframes degradado {
+    0%   { background-position: 0% 50%; }   /* inicio del degradado */
+    50%  { background-position: 100% 50%; } /* punto medio */
+    100% { background-position: 0% 50%; }   /* vuelve al inicio (loop) */
+}
+
+
+/** Tabla */
+table{
+    width:70%;
+    border-collapse:collapse;
+    margin-top:20px;
+}
+
+th{
+    background:#8A2BE2;
+    color:white;
+    padding:10px;
+}
+
+td{
+    padding:10px;
+    border:1px solid #f6f6f6;
+    color:white
+}
+tr:hover{
+    background:#492f7279;
+}
+
+
+/**Galería de artistas */
+
+div.galleria {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+
+div.galleria-item {
+  justify-content: center;
+  margin: 12px;
+  width: 180px;
+  transition: 0.5s;
+}
+
+div.galleria-item:hover{
+  justify-content: center;
+  margin: 12px;
+  width: 200px;
+  filter: grayscale(0%) drop-shadow(0 0 10px #8A2BE2);
+}
+
+div.galleria-item img {
+  justify-content: center;
+  width: 100%;
+  height: auto;
+}
+
+div.galleria-item div.texto {
+  padding: 15px;
+  text-align: center;
+  color: #F2F2F2;
+}
+
+.spotify {
+    background-color: #163a23;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+    margin-top: 30px; 
+}
+.spotify:hover {
+    background-color: #1a6937;
+    transform: scale(1.05);
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+/* Pie de página */
+footer {
+    background-color: #131116;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    border-radius: 0px;
+    
+}
+
+
+
+
