@@ -1,6 +1,6 @@
 /** Diseño general */
 body {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.930), rgba(0, 0, 0, 0.930)), url('../fondos/fondo1.png');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.800), rgba(0, 0, 0, 0.800)), url('../fondos/fondo1.png');
     margin: auto;
 }
 
@@ -114,7 +114,7 @@ button[onclick="cerrarSesion()"]:hover {
 /** titulos de encabezado */
 
 header {
-    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../fondos/fondo1.png');
+    background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0, 0, 0, 0.2)), url('../fondos/fondo1.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
